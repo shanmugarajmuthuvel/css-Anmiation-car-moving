@@ -1,0 +1,89 @@
+<html>
+<head><title>shanmugaraj</title>
+  <style>
+    *{
+	   padding:0;
+	   margin:0;
+	   box-sizing:border-box;
+	   }
+     body{
+	 display:flex;
+	 align-items:center;
+	 justify-content:center;
+	 height:100vh;
+	 } 
+	 .container{
+	    display:flex;
+		flex-direction:column;
+		justify-content:center;
+		aling-items:center;
+		}
+		.car{
+		  position:relative;
+		  
+		  
+		  }
+		.car img{
+		    width:30%;
+			 animation:move 2s linear infinite;
+			}
+			.wheel img{
+			  width: 3.5%;
+
+  
+    top: 50%;
+    left: 19.2%;
+    position: absolute;
+			   }
+  
+  
+
+ .whe {
+    left: 31%;
+    width: 3.6%;
+    position: absolute;
+    top: 50%;
+	animation:spin 2s linear infinite;
+}
+.wheel img{
+     animation:spin 2s linear infinite;
+	 }
+	 @keyframes spin{
+	 100%{
+	     transform:rotate(360deg);
+		 }
+
+ @keyframes move{
+         0%{
+		   transform:translateX(10px)
+		   
+		   
+		   }
+		  50%{
+            transform:rotate(360deg)	  
+		   }
+		   100%{
+            transform:translateY(200px)		  
+		   }
+		   }
+         
+	
+  </style>
+</head>
+<body>
+      <div class="container">
+	     <div class="city"></div>
+		 <div class="highway"></div>
+		 <div class="car">
+		    <img src="image.png">
+	     </div>
+		 <div class="wheel">
+		   <img src="wheel.png">
+		 </div>
+
+	  
+	  </div>
+	      	         <img src="wheel.png"  class="whe">
+	  
+</body>
+</html>
